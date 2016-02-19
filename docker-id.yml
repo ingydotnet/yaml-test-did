@@ -1,0 +1,18 @@
+---
+name: yaml-test
+user: dids
+
+entry:
+- name: main
+  point: /yaml-test
+  interactive: true
+  tty: true
+  privileged: false
+  readonly: false
+  rm: true
+  volume: []
+  env: []
+
+  run: -it
+    --entrypoint /yaml-test
+    dids/yaml-test
